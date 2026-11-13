@@ -37,6 +37,4 @@ Dataset: https://claude.ai/chat/4ea5ee6e-169a-474b-9f6d-3fb2a0f6e437
 
 ## Description 
 
-Write a description of your project here. In your description, include as many vocab words from our class to explain your User Story, the chosen dataset and how your project addressed that users goals. If your project used the Scanner class for user input, explain how the user will interact with your project.
-
 This project helps a gaming enthusiast find video games by genre. Our dataset is two parallel text files we created: `names.txt` (100 game names) and `genres.txt` (each game's genre). In `DataRunner`, each file is read into a **1D array** of **Strings** and passed as **parameters** to the `UserStory` **constructor**, which uses a **for loop** to **traverse** both arrays and create a `Game` **object** at each **index**. The `Game` class has private **instance variables** and **accessor methods**. `UserStory` has **methods** that analyze the data: `countGenre()` counts games in a genre using `.equals()`, `getGamesInGenre()` **returns** a new **array** of games in a chosen genre, `getMostCommonGenre()` finds the genre with the most games, and `toString()` **returns** a summary of the data. Using the **Scanner** class, the user types a genre and the program prints every matching game, or "No games found" if there are none.
